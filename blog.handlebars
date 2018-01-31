@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Women Level Up Blog</title>
+  <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="./assets/wlu_logo.jpeg" alt="logo">
+      <h1> Women Level Up </h1>
+      <h2> Diversity in Tech </h2>
+    </div>
+    <ul class="lines">
+      {{#each posts}}
+      <li class="line">
+        <a href="{{slug}}.html">
+          {{capitalize title}}
+        </a>
+        <div class="date">{{stringifyDate date}}</div>
+      </li>
+      {{/each}}
+    </ul>
+    <p class="footer">Sample Project for 'DIY Static Site Generator' Talk</p>
+  </div>
+</body>
+
+</html>
